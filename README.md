@@ -24,7 +24,7 @@ Or install it yourself as:
 
 To lookup
 
-    client = SimpleWhois::Client.new server: 'whois.radb.net'   
+    client = SimpleWhois::Client.new 'whois.radb.net'   
     record = client.lookup '8.8.8.8'
     record.to_s
       => "route:      8.8.8.0/24
@@ -61,12 +61,12 @@ To lookup
 
 To set a custom port
 
-    lient = SimpleWhois::Client.new server: 'whois.myserver', port: 10043
+    lient = SimpleWhois::Client.new 'whois.myserver', port: 10043
 
 
 To set a custom timeout in second. Default is 10 seconds.
 
-    client = SimpleWhois::Client.new server: 'whois.myserver', timeout: 3
+    client = SimpleWhois::Client.new 'whois.myserver', timeout: 3
 
 ## Errors
 
